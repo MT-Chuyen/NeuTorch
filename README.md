@@ -6,7 +6,13 @@ Train detection, segmentation, or classification models with a single function c
 
 ## Install
 
-From GitHub:
+From PyPI:
+
+```bash
+pip install NeuTorch
+```
+
+From GitHub (latest main):
 
 ```bash
 pip install git+https://github.com/MT-Chuyen/NeuTorch.git
