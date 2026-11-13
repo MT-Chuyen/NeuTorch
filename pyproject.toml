@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neutorch"
+version = "0.1.0"
+description = "Lightweight, zero-boilerplate Computer Vision training on top of PyTorch"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "MT-Chuyen" },
+]
+keywords = [
+    "pytorch",
+    "computer-vision",
+    "deep-learning",
+    "training",
+    "torchmetrics",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "torch>=2.0",
+    "torchmetrics>=1.0",
+    "tensorboard>=2.14",
+]
+
+[project.urls]
+Homepage = "https://github.com/MT-Chuyen/NeuTorch"
+Repository = "https://github.com/MT-Chuyen/NeuTorch"
+Issues = "https://github.com/MT-Chuyen/NeuTorch/issues"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "build>=1.0",
+    "twine>=4.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["neutorch*"]
+
+[tool.setuptools.package-data]
+neutorch = ["py.typed"]
